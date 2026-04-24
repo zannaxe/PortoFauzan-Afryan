@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fauzan Afryan — Frontend Developer & Web Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://namadomain-kamu.com" />
+    <meta
+      name="description"
+      content="Fauzan Afryan - Frontend Developer & Web Designer dari Sumbawa, Indonesia. Membangun antarmuka web yang indah dan interaktif."
+    />
+    <meta
+      name="keywords"
+      content="Fauzan Afryan, Frontend Developer, Web Designer, Sumbawa, Indonesia, React, UI UX"
+    />
+    <meta name="author" content="Fauzan Afryan" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Fauzan Afryan — Frontend Developer & Web Designer"
+    />
+    <meta
+      property="og:description"
+      content="17 y/o frontend dev from Sumbawa building beautiful web experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://namadomain-kamu.com" />
+    <meta
+      property="og:image"
+      content="https://namadomain-kamu.com/preview.png"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fauzan Afryan",
+        "jobTitle": "Frontend Developer & Web Designer",
+        "url": "https://namadomain-kamu.com",
+        "sameAs": [
+          "https://github.com/zannaxe",
+          "https://www.instagram.com/fzan_oizyss"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo" id="navLogo">
+          <div class="logo-avatar">
+            <span class="logo-av-text">FA</span>
+            <div class="logo-av-ring"></div>
+          </div>
+          <div class="logo-meta">
+            <span class="lm-name"
+              >fauzan<span class="lm-dot">.</span>afryan</span
+            >
+            <span class="lm-role"
+              ><span class="lm-slash">//</span> frontend dev</span
+            >
+          </div>
+        </a>
+
+        <!-- Desktop nav — max 5 items, matches mobile bottom nav exactly -->
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link active" data-section="home"
+            ><span class="nl-num">01.</span><span>home</span></a
+          >
+          <a href="#about" class="nav-link" data-section="about"
+            ><span class="nl-num">02.</span><span>about</span></a
+          >
+          <a href="#projects" class="nav-link" data-section="projects"
+            ><span class="nl-num">03.</span><span>projects</span></a
+          >
+          <a href="#playground" class="nav-link" data-section="playground"
+            ><span class="nl-num">04.</span><span>terminal</span></a
+          >
+          <a href="#contact" class="nav-link" data-section="contact"
+            ><span class="nl-num">05.</span><span>contact</span></a
+          >
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-avail">
+            <span class="avail-dot"></span><span>available</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="hero-wrap">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="hb-dot"></span><span>Available for hire</span>
+          </div>
+          <div class="hero-greeting mono cm-color">// Hello, World!</div>
+
+          <h1 class="hero-name">
+            <span class="hn-a">Fauzan</span>
+            <span class="hn-b"
+              >Afryan<span class="hn-cursor blink">_</span></span
+            >
+          </h1>
+
+          <div class="hero-role mono">
+            <span class="kw">const </span><span class="vr">role</span
+            ><span class="df"> = </span
+            ><span class="st"
+              >"<span id="heroTyped"></span
+              ><span class="blink tc">▊</span>"</span
+            ><span class="df">;</span>
+          </div>
+
+          <p class="hero-desc">
+            Building digital experiences at the intersection of
+            <span class="hl">creativity</span> and
+            <span class="hl">clean code</span>. Turning complex problems into
+            elegant solutions, one commit at a time.
+          </p>
+
+          <div class="hero-stats">
+            <div class="hs">
+              <span class="hs-n">1+</span><span class="hs-l">Years Exp</span>
+            </div>
+            <div class="hs-sep"></div>
+            <div class="hs">
+              <span class="hs-n">20+</span><span class="hs-l">Projects</span>
+            </div>
+            <div class="hs-sep"></div>
+            <div class="hs">
+              <span class="hs-n">100+</span><span class="hs-l">Commits</span>
+            </div>
+          </div>
+
+          <div class="hero-btns">
+            <a href="#projects" class="btn-p"
+              ><i class="fas fa-folder-open"></i><span>View Projects</span
+              ><span class="ba">→</span></a
+            >
+            <a href="#playground" class="btn-s"
+              ><i class="fas fa-terminal"></i><span>Try Terminal</span></a
+            >
+          </div>
+
+          <div class="hero-soc">
+            <a
+              href="https://github.com/zannaxe"
+              target="_blank"
+              rel="noopener"
+              class="soc-a"
+              title="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fzan_oizyss"
+              target="_blank"
+              rel="noopener"
+              class="soc-a"
+              title="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="mailto:fauzanafryan1@gmail.com" class="soc-a" title="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <div class="soc-line"></div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="tb-react tech-badge">
+            <i class="fab fa-react spin-s"></i><span>React</span>
+          </div>
+          <div class="tb-node tech-badge">
+            <i class="fab fa-node-js"></i><span>Node.js</span>
+          </div>
+          <div class="tb-git tech-badge">
+            <i class="fab fa-git-alt"></i><span>Git</span>
+          </div>
+          <div class="tb-docker tech-badge">
+            <i class="fab fa-docker"></i><span>Docker</span>
+          </div>
+
+          <div class="terminal-win" id="termWin">
+            <div class="tw-bar">
+              <div class="tw-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <span class="tw-title" id="heroTermTitle"
+                >Windows PowerShell — 80x24</span
+              >
+              <div class="tw-acts">
+                <i class="fas fa-minus"></i><i class="fas fa-square"></i>
+              </div>
+            </div>
+            <div class="tw-body" id="terminalBody"></div>
+            <div class="tw-status">
+              <span><i class="fas fa-code-branch"></i> main</span>
+              <span class="tw-sep">│</span>
+              <span><i class="fas fa-check-circle"></i> 0 errors</span>
+              <span class="tw-sep">│</span>
+              <span>UTF-8</span>
+              <span class="tw-sep">│</span>
+              <span class="kw" id="heroTermShell">pwsh</span>
+            </div>
+          </div>
+
+          <div class="deco-line dl-a"></div>
+          <div class="deco-line dl-b"></div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span class="mono cm-color">scroll_down()</span>
+        <i class="fas fa-chevron-down sh-arrow"></i>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="sec-hd" data-aos="fade-up" data-aos-mirror="true">
+          <span class="sec-n mono">02.</span>
+          <h2 class="sec-t">about<span class="dot-a">.</span>me</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div
+            class="about-editor"
+            data-aos="fade-right"
+            data-aos-mirror="true"
+            data-aos-delay="100"
+          >
+            <div class="ed-win">
+              <div class="ew-bar">
+                <div class="ew-dots">
+                  <span class="dot dot-r"></span><span class="dot dot-y"></span
+                  ><span class="dot dot-g"></span>
+                </div>
+                <div class="ew-tabs">
+                  <span class="ew-tab act">about.js</span
+                  ><span class="ew-tab">config.json</span>
+                </div>
+              </div>
+              <div class="ew-body">
+                <div class="code-lines" id="aboutCode">
+                  <div class="code-line">
+                    <span class="ln">1</span><span class="kw">const</span
+                    ><span class="vr"> developer</span
+                    ><span class="df"> = {</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">2</span><span class="ind"></span
+                    ><span class="pr">name</span><span class="df">: </span
+                    ><span class="st">"Fauzan Afryan"</span
+                    ><span class="df">,</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">3</span><span class="ind"></span
+                    ><span class="pr">role</span><span class="df">: </span
+                    ><span class="st">"Frontend Developer"</span
+                    ><span class="df">,</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">4</span><span class="ind"></span
+                    ><span class="pr">location</span><span class="df">: </span
+                    ><span class="st">"Indonesia"</span
+                    ><span class="df">,</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">5</span><span class="ind"></span
+                    ><span class="pr">experience</span><span class="df">: </span
+                    ><span class="nm">3</span><span class="df">,</span
+                    ><span class="cm"> // years</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">6</span><span class="ind"></span
+                    ><span class="pr">languages</span
+                    ><span class="df">: [</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">7</span><span class="ind2"></span
+                    ><span class="st">"JavaScript"</span
+                    ><span class="df">, </span
+                    ><span class="st">"TypeScript"</span
+                    ><span class="df">,</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">8</span><span class="ind2"></span
+                    ><span class="st">"Python"</span><span class="df">, </span
+                    ><span class="st">"PHP"</span><span class="df">, </span
+                    ><span class="st">"Go"</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">9</span><span class="ind"></span
+                    ><span class="df">],</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">10</span><span class="ind"></span
+                    ><span class="pr">passion</span><span class="df">: </span
+                    ><span class="st">"Building cool stuff"</span
+                    ><span class="df">,</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">11</span><span class="ind"></span
+                    ><span class="pr">coffee</span><span class="df">: </span
+                    ><span class="tp">Infinity</span
+                    ><span class="cm"> // always</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="ln">12</span><span class="df">};</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="about-info"
+            data-aos="fade-left"
+            data-aos-mirror="true"
+            data-aos-delay="150"
+          >
+            <p class="ap">
+              Hi, I'm Fauzan Afryan, a
+              <span class="hl">Junior Frontend Developer & Web Designer</span>
+              17 years old from Indonesia, with a strong passion for crafting
+              digital interfaces that are beautiful, intuitive, and memorable
+              for every user.
+            </p>
+            <p class="ap">
+              My interest in technology and programming has been growing since I
+              was young, long before I truly understood how it all worked. That
+              curiosity is what eventually pushed me to start learning
+              seriously, and ever since then I have never stopped. I am
+              currently studying at
+              <span class="hl">SMK Negeri 1 Sumbawa Besar</span>. where I
+              continue to develop my technical foundation and creativity in the
+              world of software development.
+            </p>
+            <p class="ap">
+              With over a year of hands-on experience, I am used to working on
+              personal projects independently, from designing the visual side
+              all the way to bringing it to life as a real, usable product. That
+              process is what I enjoy the most: turning an idea in my head into
+              something people can actually see, feel, and interact with,
+              usually over a
+              <span class="hl">cup of coffee late into the dark night.</span>
+            </p>
+            <p class="ap">
+              Outside of coding, I am someone who always keeps up with the
+              latest developments in technology with genuine enthusiasm. I
+              believe the best innovations are born from curiosity that never
+              fades, and I always strive to understand not only how a technology
+              works, but also why it was designed that way in the first place.
+            </p>
+            <p class="ap">
+              I am driven by creativity, attention to detail, and a constant
+              desire to grow. One day, I want to be part of the generation that
+              does not just use technology but actively shapes its direction and
+              face for millions of people.
+            </p>
+
+            <div
+              class="about-tags"
+              data-aos="fade-up"
+              data-aos-mirror="true"
+              data-aos-delay="200"
+            >
+              <span class="tag">#clean-code</span
+              ><span class="tag">#open-source</span>
+              <span class="tag">#problem-solver</span
+              ><span class="tag">#team-player</span>
+              <span class="tag">#lifelong-learner</span
+              ><span class="tag">#coffee-driven</span>
+            </div>
+
+            <div
+              class="about-cards"
+              data-aos="fade-up"
+              data-aos-mirror="true"
+              data-aos-delay="250"
+            >
+              <div class="ac">
+                <div class="ac-ic"><i class="fas fa-code"></i></div>
+                <div>
+                  <span class="ac-n">1+</span
+                  ><span class="ac-l">Years Coding</span>
+                </div>
+              </div>
+              <div class="ac">
+                <div class="ac-ic"><i class="fas fa-rocket"></i></div>
+                <div>
+                  <span class="ac-n">20+</span
+                  ><span class="ac-l">Projects</span>
+                </div>
+              </div>
+              <div class="ac">
+                <div class="ac-ic"><i class="fas fa-users"></i></div>
+                <div>
+                  <span class="ac-n">10+</span><span class="ac-l">Clients</span>
+                </div>
+              </div>
+              <div class="ac">
+                <div class="ac-ic"><i class="fas fa-star"></i></div>
+                <div>
+                  <span class="ac-n">100%</span
+                  ><span class="ac-l">Dedication</span>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="btn-p dl-btn"
+              data-aos="fade-up"
+              data-aos-mirror="true"
+              data-aos-delay="300"
+            >
+              <i class="fas fa-download"></i><span>Download CV</span
+              ><span class="btn-ext">.pdf</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <div class="sec-hd" data-aos="fade-up" data-aos-mirror="true">
+          <span class="sec-n mono">03.</span>
+          <h2 class="sec-t">my<span class="dot-a">.</span>projects</h2>
+          <div class="sec-line"></div>
+        </div>
+        <p
+          class="sec-sub mono cm-color"
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-delay="80"
+        >
+          // selected work — things I built &amp; shipped
+        </p>
+
+        <div
+          class="proj-filters"
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-delay="100"
+        >
+          <button class="pf active" data-filter="all">all</button>
+          <button class="pf" data-filter="fullstack">fullstack</button>
+          <button class="pf" data-filter="frontend">frontend</button>
+          <button class="pf" data-filter="design">design</button>
+          <button class="pf" data-filter="tool">tools</button>
+        </div>
+
+        <div class="proj-grid" id="projGrid">
+          <div
+            class="proj-card"
+            data-cat="fullstack"
+            data-aos="fade-up"
+            data-aos-mirror="true"
+            data-aos-delay="50"
+          >
+            <div class="pc-top">
+              <div class="pc-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <div class="pc-path mono">
+                <span class="cm">~/</span><span class="kw">codeflow</span>
+              </div>
+              <span class="pc-star"><i class="fas fa-star"></i> 2.4k</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-id cm mono">// PROJECT_001</div>
+              <h3 class="pc-nm">CodeFlow IDE</h3>
+              <p class="pc-ds">
+                Browser-based collaborative code editor with real-time sync, AI
+                autocompletion, and integrated terminal.
+              </p>
+              <div class="pc-stk">
+                <span>React</span><span>Node.js</span><span>WebSocket</span
+                ><span>Monaco</span>
+              </div>
+            </div>
+            <div class="pc-foot">
+              <a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl"
+                ><i class="fab fa-github"></i> Code</a
+              ><a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl pcl-live"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="proj-card feat"
+            data-cat="fullstack"
+            data-aos="fade-up"
+            data-aos-mirror="true"
+            data-aos-delay="100"
+          >
+            <div class="feat-rib">FEATURED</div>
+            <div class="pc-top">
+              <div class="pc-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <div class="pc-path mono">
+                <span class="cm">~/</span><span class="kw">devdash</span>
+              </div>
+              <span class="pc-star"><i class="fas fa-star"></i> 1.1k</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-id cm mono">// PROJECT_002</div>
+              <h3 class="pc-nm">DevOps Dashboard</h3>
+              <p class="pc-ds">
+                Unified infra monitoring aggregating Docker, K8s &amp; cloud
+                metrics with real-time alerting for dev teams.
+              </p>
+              <div class="pc-stk">
+                <span>Next.js</span><span>Prometheus</span><span>Grafana</span
+                ><span>K8s</span>
+              </div>
+            </div>
+            <div class="pc-foot">
+              <a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl"
+                ><i class="fab fa-github"></i> Code</a
+              ><a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl pcl-live"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="proj-card"
+            data-cat="tool"
+            data-aos="fade-up"
+            data-aos-mirror="true"
+            data-aos-delay="150"
+          >
+            <div class="pc-top">
+              <div class="pc-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <div class="pc-path mono">
+                <span class="cm">~/</span><span class="kw">api-forge</span>
+              </div>
+              <span class="pc-star"><i class="fas fa-star"></i> 890</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-id cm mono">// PROJECT_003</div>
+              <h3 class="pc-nm">API Forge</h3>
+              <p class="pc-ds">
+                Open-source REST API testing &amp; mocking tool with
+                terminal-inspired UI. Supports OpenAPI import/export.
+              </p>
+              <div class="pc-stk">
+                <span>TypeScript</span><span>Electron</span><span>SQLite</span>
+              </div>
+            </div>
+            <div class="pc-foot">
+              <a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl"
+                ><i class="fab fa-github"></i> Code</a
+              ><a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl pcl-live"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="proj-card"
+            data-cat="frontend"
+            data-aos="fade-up"
+            data-aos-mirror="true"
+            data-aos-delay="50"
+          >
+            <div class="pc-top">
+              <div class="pc-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <div class="pc-path mono">
+                <span class="cm">~/</span><span class="kw">ui-kit</span>
+              </div>
+              <span class="pc-star"><i class="fas fa-star"></i> 650</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-id cm mono">// PROJECT_004</div>
+              <h3 class="pc-nm">Dev UI Kit</h3>
+              <p class="pc-ds">
+                Component library with terminal &amp; code aesthetics. 40+
+                components, dark mode, zero external dependencies.
+              </p>
+              <div class="pc-stk">
+                <span>React</span><span>TypeScript</span><span>Storybook</span>
+              </div>
+            </div>
+            <div class="pc-foot">
+              <a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl"
+                ><i class="fab fa-github"></i> Code</a
+              ><a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl pcl-live"
+                ><i class="fas fa-external-link-alt"></i> Docs</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="proj-card"
+            data-cat="backend"
+            data-aos="fade-up"
+            data-aos-mirror="true"
+            data-aos-delay="100"
+          >
+            <div class="pc-top">
+              <div class="pc-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <div class="pc-path mono">
+                <span class="cm">~/</span><span class="kw">neural-search</span>
+              </div>
+              <span class="pc-star"><i class="fas fa-star"></i> 430</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-id cm mono">// PROJECT_005</div>
+              <h3 class="pc-nm">Neural Search</h3>
+              <p class="pc-ds">
+                Semantic search engine using vector embeddings + FAISS.
+                Real-time indexing via cosine similarity matching.
+              </p>
+              <div class="pc-stk">
+                <span>Python</span><span>FastAPI</span><span>FAISS</span
+                ><span>Redis</span>
+              </div>
+            </div>
+            <div class="pc-foot">
+              <a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl"
+                ><i class="fab fa-github"></i> Code</a
+              ><a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl pcl-live"
+                ><i class="fas fa-external-link-alt"></i> Demo</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="proj-card"
+            data-cat="tool"
+            data-aos="fade-up"
+            data-aos-mirror="true"
+            data-aos-delay="150"
+          >
+            <div class="pc-top">
+              <div class="pc-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <div class="pc-path mono">
+                <span class="cm">~/</span><span class="kw">git-viz</span>
+              </div>
+              <span class="pc-star"><i class="fas fa-star"></i> 320</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-id cm mono">// PROJECT_006</div>
+              <h3 class="pc-nm">GitViz</h3>
+              <p class="pc-ds">
+                Interactive Git branch visualizer rendering complex repos as
+                navigable graph trees with diff highlighting.
+              </p>
+              <div class="pc-stk">
+                <span>D3.js</span><span>Node.js</span><span>Git API</span>
+              </div>
+            </div>
+            <div class="pc-foot">
+              <a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl"
+                ><i class="fab fa-github"></i> Code</a
+              ><a
+                href="https://github.com/zannaxe"
+                target="_blank"
+                rel="noopener"
+                class="pcl pcl-live"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-more" data-aos="fade-up" data-aos-mirror="true">
+          <a
+            href="https://github.com/zannaxe"
+            target="_blank"
+            rel="noopener"
+            class="btn-ghost"
+            ><i class="fab fa-github"></i><span>View all on GitHub</span
+            ><span class="ba">→</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CODING VIBE / PLAYLIST -->
+    <section id="playlist" class="section-pad playlist-sec">
+      <div class="container">
+        <div class="sec-hd" data-aos="fade-up" data-aos-mirror="true">
+          <span class="sec-n mono">04.</span>
+          <h2 class="sec-t">coding<span class="dot-a">.</span>vibe</h2>
+          <div class="sec-line"></div>
+        </div>
+        <p
+          class="sec-sub mono cm-color"
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-delay="80"
+        >
+          // what's in my ears while I ship pixels at 2am
+        </p>
+
+        <div
+          class="playlist-wrap"
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-delay="120"
+        >
+          <!-- Left: Enhanced Spotify Embed -->
+          <div class="playlist-embed-col">
+            <div class="playlist-glow-orb"></div>
+            <div class="playlist-embed">
+              <div class="pe-header">
+                <div class="pe-dots">
+                  <span class="dot dot-r"></span><span class="dot dot-y"></span
+                  ><span class="dot dot-g"></span>
+                </div>
+                <span class="pe-title mono">spotify — coding.playlist</span>
+                <div class="pe-eq">
+                  <div class="eq-bar"></div>
+                  <div class="eq-bar"></div>
+                  <div class="eq-bar"></div>
+                  <div class="eq-bar"></div>
+                  <div class="eq-bar"></div>
+                </div>
+              </div>
+              <div class="pe-iframe-wrap">
+                <iframe
+                  src="https://open.spotify.com/embed/playlist/1ioz5OcZJ1YMpVWThFnGLI?utm_source=generator&theme=0"
+                  width="100%"
+                  height="352"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    fullscreen;
+                    picture-in-picture;
+                  "
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Info -->
+          <div class="playlist-info">
+            <div class="pi-now-playing">
+              <div class="pi-eq">
+                <div class="eq-bar"></div>
+                <div class="eq-bar"></div>
+                <div class="eq-bar"></div>
+                <div class="eq-bar"></div>
+                <div class="eq-bar"></div>
+              </div>
+              <span class="mono" style="font-size: 0.7rem; color: var(--green)"
+                >now_playing</span
+              >
+            </div>
+
+            <h3 class="pi-title">
+              My Coding<br />Playlist for
+              <span class="pi-accent">Deep Work</span>
+            </h3>
+
+            <div class="pi-stats-row">
+              <div class="pi-stat">
+                <span class="pi-stat-n">120+</span
+                ><span class="pi-stat-l">tracks</span>
+              </div>
+              <div class="pi-stat-sep"></div>
+              <div class="pi-stat">
+                <span class="pi-stat-n">8h+</span
+                ><span class="pi-stat-l">runtime</span>
+              </div>
+              <div class="pi-stat-sep"></div>
+              <div class="pi-stat">
+                <span class="pi-stat-n">∞</span
+                ><span class="pi-stat-l">vibes</span>
+              </div>
+            </div>
+
+            <p class="pi-sub">
+              The go-to playlist when I need to enter flow state and ship clean
+              interfaces. No distractions, just pure energy and caffeine.
+            </p>
+
+            <div class="pi-moods">
+              <div class="pi-mood">
+                <i class="fas fa-moon"></i><span>Late Night Sessions</span>
+              </div>
+              <div class="pi-mood">
+                <i class="fas fa-mug-hot"></i><span>Coffee + Focus</span>
+              </div>
+              <div class="pi-mood">
+                <i class="fas fa-bolt"></i><span>Deadline Mode</span>
+              </div>
+              <div class="pi-mood">
+                <i class="fas fa-bug"></i><span>Debugging Zen</span>
+              </div>
+            </div>
+
+            <div class="pi-genres">
+              <span class="pi-genre">lo-fi</span>
+              <span class="pi-genre">indie</span>
+              <span class="pi-genre">electronic</span>
+              <span class="pi-genre">ambient</span>
+              <span class="pi-genre">chill</span>
+            </div>
+
+            <a
+              href="https://open.spotify.com/playlist/1ioz5OcZJ1YMpVWThFnGLI"
+              target="_blank"
+              rel="noopener"
+              class="pi-spotify-btn"
+            >
+              <i class="fab fa-spotify"></i>
+              <span>Open in Spotify</span>
+              <span class="ba">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERMINAL PLAYGROUND -->
+    <section id="playground" class="section-pad playground-sec">
+      <div class="container">
+        <div class="sec-hd" data-aos="fade-up" data-aos-mirror="true">
+          <span class="sec-n mono">05.</span>
+          <h2 class="sec-t">terminal<span class="dot-a">.</span>playground</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <!-- OS Selector -->
+        <div
+          class="os-selector"
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-delay="50"
+        >
+          <span class="os-label mono cm-color">// select os:</span>
+          <button class="os-btn active" data-os="windows" id="osBtnWin">
+            <i class="fab fa-windows"></i><span>Windows</span>
+          </button>
+          <button class="os-btn" data-os="linux" id="osBtnLin">
+            <i class="fab fa-linux"></i><span>Linux</span>
+          </button>
+        </div>
+
+        <p
+          class="sec-sub mono cm-color"
+          id="pgSubtitle"
+          style="margin-top: 0.75rem"
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-delay="80"
+        >
+          // PowerShell simulation — type commands. Try:
+          <span class="kw">help</span>
+        </p>
+
+        <div
+          class="pg-wrap"
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-delay="120"
+        >
+          <div class="pg-chips" id="pgChips"></div>
+
+          <div class="pg-terminal">
+            <div class="pg-bar">
+              <div class="pg-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <span class="pg-title" id="pgBarTitle"
+                >Windows PowerShell — Interactive</span
+              >
+              <button class="pg-clr" onclick="pgClear()" title="Clear terminal">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+            <div class="pg-out" id="pgOut"></div>
+            <div class="pg-in-row">
+              <span class="pg-prompt" id="pgPromptEl">
+                <span class="kw">PS</span>&nbsp;<span class="tp"
+                  >C:\Users\fauzan</span
+                ><span class="df">&gt;</span>
+              </span>
+              <input
+                type="text"
+                class="pg-input"
+                id="pgInput"
+                placeholder="type a command..."
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-pad contact-sec">
+      <div class="container">
+        <div class="sec-hd" data-aos="fade-up" data-aos-mirror="true">
+          <span class="sec-n mono">06.</span>
+          <h2 class="sec-t">get<span class="dot-a">.</span>in.touch</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div
+            class="ct-terminal"
+            data-aos="fade-right"
+            data-aos-mirror="true"
+            data-aos-delay="100"
+          >
+            <div class="ctt-bar">
+              <div class="ctt-dots">
+                <span class="dot dot-r"></span><span class="dot dot-y"></span
+                ><span class="dot dot-g"></span>
+              </div>
+              <span class="ctt-name">contact.ps1</span>
+            </div>
+            <div class="ctt-body">
+              <div class="ctt-cmd">
+                <span class="ct-pmt">PS&gt;</span
+                ><span> Get-Content contact_info.txt</span>
+              </div>
+              <div class="ctt-out">
+                <div class="ctt-f">
+                  <span class="ctt-k">Email:</span
+                  ><a href="mailto:fauzanafryan1@gmail.com" class="ctt-v"
+                    >fauzanafryan1@gmail.com</a
+                  >
+                </div>
+                <div class="ctt-f">
+                  <span class="ctt-k">Phone:</span
+                  ><span class="ctt-v">+62 877-3155-0949</span>
+                </div>
+                <div class="ctt-f">
+                  <span class="ctt-k">Location:</span
+                  ><span class="ctt-v">Indonesia</span>
+                </div>
+                <div class="ctt-f">
+                  <span class="ctt-k">Status:</span
+                  ><span class="ctt-v status-green">● Open to Work</span>
+                </div>
+              </div>
+              <div class="ctt-cmd">
+                <span class="ct-pmt">PS&gt;</span
+                ><span> echo $env:RESPONSE_TIME</span>
+              </div>
+              <div class="ctt-out">
+                <span class="ctt-v">Usually within 24 hours</span>
+              </div>
+              <div class="ctt-cmd">
+                <span class="ct-pmt">PS&gt;</span><span class="blink">█</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="ct-links"
+            data-aos="fade-left"
+            data-aos-mirror="true"
+            data-aos-delay="150"
+          >
+            <a
+              href="https://github.com/zannaxe"
+              target="_blank"
+              rel="noopener"
+              class="ctl-item"
+            >
+              <div class="ctl-ic"><i class="fab fa-github"></i></div>
+              <div class="ctl-info">
+                <span class="ctl-p">GitHub</span
+                ><span class="ctl-h">@zannaxe</span>
+              </div>
+              <i class="fas fa-arrow-right ctl-arr"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/fzan_oizyss"
+              target="_blank"
+              rel="noopener"
+              class="ctl-item"
+            >
+              <div class="ctl-ic" style="color: var(--tp)">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="ctl-info">
+                <span class="ctl-p">Instagram</span
+                ><span class="ctl-h">@fzan_oizyss</span>
+              </div>
+              <i class="fas fa-arrow-right ctl-arr"></i>
+            </a>
+            <a href="mailto:fauzanafryan1@gmail.com" class="ctl-item ctl-email">
+              <div class="ctl-ic"><i class="fas fa-envelope"></i></div>
+              <div class="ctl-info">
+                <span class="ctl-p">Email</span
+                ><span class="ctl-h">fauzanafryan1@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-right ctl-arr"></i>
+            </a>
+
+            <div class="cta-blk">
+              <p class="cta-txt">
+                Have a project in mind? Let's build something great together.
+              </p>
+              <a
+                href="mailto:fauzanafryan1@gmail.com"
+                class="btn-p"
+                style="display: inline-flex"
+              >
+                <i class="fas fa-paper-plane"></i><span>Send Email</span
+                ><span class="ba">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER — redesigned -->
+    <footer class="footer">
+      <div class="footer-in">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="logo-avatar logo-avatar-sm">
+              <span class="logo-av-text">FA</span>
+            </div>
+            <div class="footer-brand-meta">
+              <span class="ft-name">Fauzan Afryan</span>
+              <span class="ft-role mono cm-color"
+                >// Frontend Developer & Web Designer</span
+              >
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <a
+              href="https://github.com/zannaxe"
+              target="_blank"
+              rel="noopener"
+              class="ft-soc"
+              title="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fzan_oizyss"
+              target="_blank"
+              rel="noopener"
+              class="ft-soc"
+              title="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="mailto:fauzanafryan1@gmail.com"
+              class="ft-soc"
+              title="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-div"></div>
+
+        <div class="footer-bot">
+          <span class="mono cm-color ft-copy"
+            >// &copy; <span id="fyear">2025</span> Fauzan Afryan — Built with
+            coffee</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-top" id="backTop" title="Back to top">
+      <i class="fas fa-terminal"></i>
+    </button>
+
+    <!-- MOBILE BOTTOM NAV — 5 items, matches desktop nav exactly -->
+    <nav class="mobile-bottom-nav" id="mobileBottomNav">
+      <a href="#home" class="mbn-item active" data-section="home">
+        <i class="fas fa-house"></i><span>home</span>
+      </a>
+      <a href="#about" class="mbn-item" data-section="about">
+        <i class="fas fa-user"></i><span>about</span>
+      </a>
+      <a href="#projects" class="mbn-item" data-section="projects">
+        <i class="fas fa-folder-open"></i><span>projects</span>
+      </a>
+      <a href="#playground" class="mbn-item" data-section="playground">
+        <i class="fas fa-terminal"></i><span>terminal</span>
+      </a>
+      <a href="#contact" class="mbn-item" data-section="contact">
+        <i class="fas fa-envelope"></i><span>contact</span>
+      </a>
+    </nav>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
