@@ -15,7 +15,7 @@
   --tx2:      #9b96cc;
   --tx3:      #57527a;
   --kw:  #bd93f9;
-  --fn:  #ffb86c; 
+  --fn:  #ffb86c;
   --tp:  #ff79c6;
   --st:  #50fa7b;
   --nm:  #ffb86c;
@@ -434,13 +434,14 @@ img{display:block;max-width:100%}
 .eq-bar:nth-child(5){--d:.9s;--dl:.05s;--mh:12px}
 @keyframes eq-dance{0%,100%{height:3px}50%{height:var(--mh,12px)}}
 
+.pe-iframe-wrap{
+  position:relative;
+  line-height:0;
+}
 .pe-iframe-wrap iframe{
   display:block;width:100%;border-radius:0;
-  min-height:352px;
+  height:352px;min-height:0;
 }
-
-/* Info column */
-.playlist-info{display:flex;flex-direction:column;gap:1.4rem}
 
 .pi-now-playing{
   display:inline-flex;align-items:center;gap:8px;
@@ -703,16 +704,16 @@ img{display:block;max-width:100%}
   .pe-iframe-wrap iframe{min-height:320px}
 }
 
+.pe-iframe-wrap iframe{height:320px}
+
 @media(max-width:900px){
   /* Hide desktop nav links + available badge */
   .nav-links{display:none}
   .nav-avail{display:none}
-
   /* Show mobile bottom nav */
   .mobile-bottom-nav{display:flex}
   body{padding-bottom:var(--mbn-h)}
   .back-top{bottom:calc(var(--mbn-h) + 1rem)}
-
   .about-grid{grid-template-columns:1fr;gap:2rem}
   .contact-grid{grid-template-columns:1fr;gap:1.5rem}
 }
@@ -721,7 +722,6 @@ img{display:block;max-width:100%}
   :root{--nav-h:58px;--mbn-h:60px}
   .section-pad{padding:5rem 0}
   .container{padding:0 1.1rem}
-
   /* Hero stacks vertically */
   .hero-wrap{
     grid-template-columns:1fr;
@@ -737,11 +737,9 @@ img{display:block;max-width:100%}
   .scroll-hint{display:none}
   .hero-name{font-size:clamp(2rem,9vw,3rem)}
   .hero-desc{max-width:100%}
-
   .about-grid{grid-template-columns:1fr}
   .proj-grid{grid-template-columns:1fr}
   .about-cards{grid-template-columns:repeat(2,1fr)}
-
   /* Spotify: single column */
   .playlist-wrap{grid-template-columns:1fr;gap:1.75rem}
   .playlist-embed-col{max-width:100%}
@@ -751,11 +749,9 @@ img{display:block;max-width:100%}
   .pi-title{font-size:1.4rem}
   .pi-spotify-btn{align-self:stretch;justify-content:center}
   .pi-stats-row{gap:0}
-
   /* AMA */
   .ama-messages{min-height:200px}
   .ama-bubble{max-width:88%}
-
   /* Footer */
   .footer-top{flex-direction:column;align-items:flex-start;gap:1rem}
   .footer-bot{flex-direction:column;gap:.5rem;align-items:flex-start}
@@ -767,22 +763,16 @@ img{display:block;max-width:100%}
   .hs{padding:0 12px 0 0}
   .hero-btns{flex-direction:column;gap:.5rem}
   .btn-p,.btn-s{width:100%;justify-content:center;padding:11px 16px}
-
   .about-cards{grid-template-columns:repeat(2,1fr)}
   .sec-t{font-size:1.5rem}
-
   .ama-suggestions{gap:4px}
   .ama-chip{font-size:.62rem;padding:4px 8px}
-
   .pi-moods{grid-template-columns:1fr}
-
   /* OS selector wraps nicely */
   .os-selector{gap:.5rem}
   .os-btn{padding:6px 12px;font-size:.7rem}
-
   /* Playlist embed height lower on small phones */
   .playlist-embed iframe{height:240px;min-height:240px}
-
   /* Chips wrap cleanly */
   .pg-chips{gap:5px}
   .pg-chip{font-size:.65rem;padding:4px 10px}
